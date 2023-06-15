@@ -62,7 +62,7 @@ if (!$result) {
     die("Create failed table KHACHHANG: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Create success";
+    echo "Create success KHACHHANG <br>";
 }
 
 $result = mysqli_query($dbh, $sql_NV); // Thực thi câu lệnh SQL
@@ -71,7 +71,7 @@ if (!$result) {
     die("Create failed table NHANVIEN: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Create success";
+    echo "Create success NHANVIEN <br>";
 }
 
 
@@ -81,7 +81,7 @@ if (!$result) {
     die("Create failed table SANPHAM: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Create success";
+    echo "Create success SANPHAM <br>";
 }
 
 $result = mysqli_query($dbh, $sql_HD); // Thực thi câu lệnh SQL
@@ -90,7 +90,7 @@ if (!$result) {
     die("Create failed table HOADON: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Create success";
+    echo "Create success HOADON <br>";
 }
 
 $result = mysqli_query($dbh, $sql_CTHD); // Thực thi câu lệnh SQL
@@ -99,7 +99,7 @@ if (!$result) {
     die("Create failed table CHITIETHOADON: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Create success";
+    echo "Create success CHITIETHOADON <br><br>";
 }
 
 //INTERT DATA
@@ -149,7 +149,7 @@ if (!$result) {
     die("Add failed table KHACHHANG: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Add success";
+    echo "Add success table KHACHHANG <br>";
 }
 
 
@@ -159,7 +159,7 @@ if (!$result) {
     die("Add failed table NHANVIEN: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Add success";
+    echo "Add success table NHANVIEN <br>";
 }
 
 
@@ -169,7 +169,7 @@ if (!$result) {
     die("Add failed table SANPHAM: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Add success";
+    echo "Add success table SANPHAM <br>";
 }
 
 
@@ -179,31 +179,8 @@ if (!$result) {
     die("Add failed table HOADON: " . mysqli_error($dbh)); 
     // Thông báo lỗi nếu thực thi câu lệnh thất bại
 } else {
-    echo "Add success";
+    echo "Add success table HOADON <br>";
 }
 
-// //update
-// $sql_stmt = "UPDATE sinhvien set DTB =8.5 where MaSV = 'SV001'";
-
-// $result = mysqli_query($dbh, $sql_stmt); // Thực thi câu lệnh SQL
-    
-// if (!$result) {
-//     die("Update failed: " . mysqli_error($dbh)); 
-//     // Thông báo lỗi nếu thực thi câu lệnh thất bại
-// } else {
-//     echo "Update success";
-// }
-
-// //delete
-// $sql_stmt = "DELETE from sinhvien where MaSV = 'SV003'";
-
-// $result = mysqli_query($dbh, $sql_stmt); // Thực thi câu lệnh SQL
-    
-// if (!$result) {
-//     die("Delete failed: " . mysqli_error($dbh)); 
-//     // Thông báo lỗi nếu thực thi câu lệnh thất bại
-// } else {
-//     echo "Delete success";
-// }
 
 ?>
